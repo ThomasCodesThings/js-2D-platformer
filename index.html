@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel ="stylesheet" type="text/css" href="css/canvas.css">
+</head>
+<body>
+<canvas id="gameCanvas">
+    <script src = 'js/load.js'></script>
+    <script src = 'js/mainMenu.js'></script>
+    <script src = 'js/info.js'></script>
+    <script src = 'js/levels/level1.js'></script>
+    <script src = 'js/levels/level2.js'></script>
+    <script src = 'js/levels/level3.js'></script>
+    <script src = 'js/objects.js'></script>
+    <script src = 'js/game.js'></script>
+    <script src = 'js/gameOver.js'></script>
+    <script>
+    var canvas;
+    var canvasContex;
+    canvas = document.getElementById('gameCanvas');
+    canvas.height = 16 * 40;
+    canvas.width = 28 * 40;
+    canvasContex = canvas.getContext('2d');
+    var playerTime = [0,0,0];
+    var playerScore = [0,0,0]; 
+    var levelsCompleted = 0; 
+    var drawing = false;
+    var playOnce = 0;
+    var playerDeath = 0;
+    var level = 1;
+    var musicOff = false;
+    var keys = {};
+    mainMenu();
+    window.onkeydown = function(event){
+        keys[event.key] = true;
+    };
+    window.onkeyup = function(event){
+        keys[event.key] = false;
+    };
+    </script>
+</canvas>
+</body>
+</html>

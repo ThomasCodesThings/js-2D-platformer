@@ -1,0 +1,67 @@
+function level1(){
+    return [
+        new Background(1),
+        
+        new Block(11, 6, "block"),
+        new Block(11, 7, "block"),
+        new Block(11, 8, "block"),
+        new Block(9, 10, "block"),
+        new Block(8, 12, "block"),
+        new Block(8, 13, "block"),
+        new Block(10, 18, "block"),
+        new Block(10, 19, "block"),
+        new Block(10, 20, "block"),
+        new Block(10, 25, "block"),
+        new Block(10, 26, "block"),
+        new Block(10, 27, "block"),
+        new Block(10, 28, "block"),
+        new Block(9, 28, "block"),
+        new Block(5, 27, "block"),
+        new Block(5, 26, "block"),
+        new Block(5, 25, "block"),
+        new Block(5, 24, "block"),
+        new Block(5, 23, "block"),
+        new Block(5, 22, "block"),
+        new Block(5, 21, "block"),
+        new Block(5, 20, "block"),
+        new Block(3, 10, "block"),
+        new Block(3, 11, "block"),
+        new Block(3, 12, "block"),
+        new Block(3, 13, "block"),
+        new Block(3, 14, "block"),
+        new Block(3, 15, "block"),
+        new Block(3, 16, "block"),
+        new Block(6, 2, "block"),
+        new Block(6, 3, "block"),
+        new Block(6, 4, "block"),
+        new Block(6, 5, "block"),
+        new Block(6, 6, "block"),
+
+        new Spike(12, 26, "spike"),
+        new Spike(3, 22, "spike"),
+        new Spike(3, 23, "spike"),
+        new Spike(8, 18, "spike"),
+     
+        new Coin(12, 1, "coin"),
+        new Coin(11, 7.5, "coin"),
+        new Coin(10, 15, "coin"),
+        new Coin(9, 20.5, "coin"),
+        new Coin(9, 6.25, "coin"),
+        new Coin(8, 24.25, "coin"),
+        new Coin(7, 27.25, "coin"),
+        new Coin(4, 2.25, "coin"),
+        new Coin(4, 4.25, "coin"),
+        new Coin(3.5, 12.25, "coin"),
+        new Coin(1, 9.25, "coin"),
+        new Coin(1, 15.25, "coin"),
+        new Coin(1, 22.75, "coin"),
+
+        new TeleportCoin(1, 12.25, "teleportCoin"),
+
+        new Bonus(6, 12, "bonus"),
+        
+        new Button(11.5, 27.3, "button", false),
+
+        new Key(4.3, 3.3, "key", false)
+    ];
+}

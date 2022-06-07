@@ -1,0 +1,60 @@
+function level3(){
+    return [
+        new Background(3),
+
+        new Block(11, 8, "block"),
+        new Block(12, 8, "block"),
+        new Block(9, 11, "block"),
+        new Block(10, 11, "block"),
+        new Block(11, 11, "block"),
+        new Block(12, 11, "block"),
+        new Block(9, 21, "block"),
+        new Block(10, 21, "block"),
+        new Block(11, 21, "block"),
+        new Block(12, 21, "block"),
+        new Block(11, 24, "block"),
+        new Block(12, 24, "block"),
+        new Block(8, 16, "block"),
+        new Block(5, 1, "block"),
+        new Block(5, 2, "block"),
+        new Block(5, 3, "block"),
+        new Block(6, 25, "block"),
+        new Block(6, 26, "block"),
+        new Block(6, 27, "block"),
+        new Block(5, 5, "block"),
+        new Block(5, 6, "block"),
+        new Block(5, 7, "block"),
+        new Block(5, 8, "block"),
+
+        new Spike(11, 0, "spike"),
+        new Spike(11, 2, "spike"),
+        new Spike(11, 4, "spike"),
+        new Spike(11, 6, "spike"),
+        new Spike(11, 22, "spike"),
+        new Spike(15, 11, "spike"),
+        new Spike(15, 12, "spike"),
+        new Spike(15, 13, "spike"),
+        new Spike(15, 14, "spike"),
+        new Spike(15, 15, "spike"),
+        new Spike(15, 16, "spike"),
+        new Spike(15, 17, "spike"),
+        new Spike(15, 18, "spike"),
+        new Spike(15, 19, "spike"),
+
+        new Coin(2.8, 2, "coin"),
+        new Coin(3.5, 25.25, "coin"),
+        new Coin(11, 8.25, "coin"),
+        new Coin(11, 9.25, "coin"),
+        new Coin(10.5, 5.25, "coin"),
+
+        new TeleportCoin(3, 5, "teleportCoin"),
+        new TeleportCoin(3, 6.5, "teleportCoin"),
+
+        new Bonus(1, 0, "bonus"),
+        new Bonus(11, 1, "bonus"),
+        new Bonus(11, 21, "bonus"),
+
+        new Key(11, 3.2, "key", false),
+        new Button(10.5, 26.25, "button", false)
+    ];
+}
